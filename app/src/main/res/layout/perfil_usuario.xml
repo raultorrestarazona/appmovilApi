@@ -40,7 +40,7 @@
                 android:textColor="#FAF9F9" />
 
             <EditText
-                android:id="@+id/actualizarUserDNI"
+                android:id="@+id/edtDNINU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -71,7 +71,7 @@
                 android:textColor="#FAF9F9" />
 
             <EditText
-                android:id="@+id/edtContraseñaI"
+                android:id="@+id/edtNombreNU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -102,7 +102,7 @@
                 android:textColor="#FFFFFF" />
 
             <EditText
-                android:id="@+id/edtContraA"
+                android:id="@+id/edtApellidosNU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -133,7 +133,7 @@
                 android:textColor="#F4F3F3" />
 
             <EditText
-                android:id="@+id/edtactualizarUserFecNac"
+                android:id="@+id/edtFechaNacimientoNU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -164,7 +164,7 @@
                 android:textColor="#F8F5F5" />
 
             <Spinner
-                android:id="@+id/spnactualizarUserDepartamento"
+                android:id="@+id/spnDepartamentosList"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_marginLeft="20dp"
@@ -195,7 +195,7 @@
                 android:textColor="#F8F5F5" />
 
             <Spinner
-                android:id="@+id/spnactualizarUserProvincia"
+                android:id="@+id/spnProvinciaNU"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_marginLeft="20dp"
@@ -226,7 +226,7 @@
                 android:textColor="#F8F5F5" />
 
             <Spinner
-                android:id="@+id/spnactualizarUserDistrito"
+                android:id="@+id/spnDistritoListNU"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_marginLeft="20dp"
@@ -257,7 +257,7 @@
                 android:textColor="#FAF9F9" />
 
             <EditText
-                android:id="@+id/edtactualizarUserContra"
+                android:id="@+id/edtContraseñaNU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -288,7 +288,7 @@
                 android:textColor="#FAF9F9" />
 
             <EditText
-                android:id="@+id/edtactualizarUserRepitaContra"
+                android:id="@+id/edtRptContraseñaNU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"

@@ -62,7 +62,7 @@
                 android:textColor="#F4F3F3" />
 
             <EditText
-                android:id="@+id/edtactualizarUserFecNac"
+                android:id="@+id/edtFechaNacimientoNU"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"

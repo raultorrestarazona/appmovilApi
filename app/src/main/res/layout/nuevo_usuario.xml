@@ -41,7 +41,7 @@
                 android:textColor="#FAF9F9" />
 
             <EditText
-                android:id="@+id/edtContraseñaI"
+                android:id="@+id/edtNombreNU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -72,7 +72,7 @@
                 android:textColor="#FFFFFF" />
 
             <EditText
-                android:id="@+id/edtContraA"
+                android:id="@+id/edtApellidosNU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -103,14 +103,14 @@
                 android:textColor="#F4F3F3" />
 
             <EditText
-                android:id="@+id/edtactualizarUserFecNac"
+                android:id="@+id/edtFechaNacimientoNU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/input"
-                android:hint="dd/mm/yyyy"
+                android:hint="yyyy-mm-dd"
                 android:inputType="textPersonName"
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
@@ -134,15 +134,14 @@
                 android:textColor="#F8F5F5" />
 
             <Spinner
-                android:id="@+id/spnactualizarUserDepartamento"
+                android:id="@+id/spnDepartamentosList"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/input"
-                android:hint=""
-                android:inputType="textPersonName"
+                android:entries="@array/spnDepartamentos"
                 android:paddingLeft="20dp"
                 android:paddingTop="10dp"
                 android:paddingRight="10dp"
@@ -165,7 +164,7 @@
                 android:textColor="#F8F5F5" />
 
             <Spinner
-                android:id="@+id/spnactualizarUserProvincia"
+                android:id="@+id/spnProvinciaNU"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_marginLeft="20dp"
@@ -196,7 +195,7 @@
                 android:textColor="#F8F5F5" />
 
             <Spinner
-                android:id="@+id/spnactualizarUserDistrito"
+                android:id="@+id/spnDistritoListNU"
                 android:layout_width="match_parent"
                 android:layout_height="47dp"
                 android:layout_marginLeft="20dp"
@@ -215,6 +214,36 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="#F8F5F5"
+                android:text="Celular :" />
+
+            <EditText
+                android:id="@+id/edtCelularNU"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/input"
+                android:hint=""
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="#fff"
+                android:textColorHint="#ccc" />
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="411dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -227,7 +256,7 @@
                 android:textColor="#FAF9F9" />
 
             <EditText
-                android:id="@+id/actualizarUserDNI"
+                android:id="@+id/edtDNINU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -258,7 +287,7 @@
                 android:textColor="#FAF9F9" />
 
             <EditText
-                android:id="@+id/edtactualizarUserContra"
+                android:id="@+id/edtContraseñaNU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -289,7 +318,7 @@
                 android:textColor="#FAF9F9" />
 
             <EditText
-                android:id="@+id/edtactualizarUserRepitaContra"
+                android:id="@+id/edtRptContraseñaNU"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -313,7 +342,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btnNuevoUsuario_Registar"
+                android:id="@+id/btnNuevoUsuario_Registrar"
                 android:layout_width="173dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"

@@ -29,7 +29,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/txtNombreDoc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="NOMBRE:"
@@ -39,7 +39,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/txtCargoDoc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CARGO:"
@@ -49,7 +49,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/txtDniDoc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="DNI:"

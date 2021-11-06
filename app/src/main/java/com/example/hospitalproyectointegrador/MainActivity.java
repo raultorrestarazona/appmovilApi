@@ -17,7 +17,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MainActivity extends AppCompatActivity implements Callback<ArrayList<Usuario>> {
+public class MainActivity extends AppCompatActivity {
     Button login;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,19 +32,11 @@ public class MainActivity extends AppCompatActivity implements Callback<ArrayLis
             }
         });
 
-        Call<ArrayList<Usuario>> callUser = ApiAdapter.getApiService().getUserResponse();
-        callUser.enqueue(this);
+        /*Call<ArrayList<Usuario>> callUser = ApiAdapter.getApiService().getUserResponse();
+        callUser.enqueue(this);*/
 
-    }
-
-    @Override
-    public void onResponse(Call<ArrayList<Usuario>> call, Response<ArrayList<Usuario>> response) {
-        ArrayList<Usuario> diseases = response.body();
-        Log.d("onResponse diseases","Size of diseases => "+ diseases.size());
-    }
-
-    @Override
-    public void onFailure(Call<ArrayList<Usuario>> call, Throwable t) {
+        /*ArrayList<Usuario> diseases = response.body();
+        Log.d("onResponse diseases","Size of diseases => "+ diseases.size());*/
 
     }
 }

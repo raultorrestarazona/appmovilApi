@@ -1,19 +1,11 @@
 package com.example.hospitalproyectointegrador.models;
 
 public class LoginResponse {
-    private String nombre;
+
     private String dni;
     private String nombre_rol;
+    private String nombre;
     private String apellido;
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public String getDni() {
         return dni;
     }
@@ -28,6 +20,14 @@ public class LoginResponse {
 
     public void setNombre_rol(String nombre_rol) {
         this.nombre_rol = nombre_rol;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getApellido() {

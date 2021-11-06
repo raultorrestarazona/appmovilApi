@@ -6,9 +6,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiAdapter {
-    private static ApiService API_SERVICE;
 
-    public static ApiService getApiService() {
+    public static Retrofit getRetrofit() {
 
         // Creamos un interceptor y le indicamos el log level a usar
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
@@ -20,15 +19,16 @@ public class ApiAdapter {
 
         String baseUrl = "https://citasmedicas2021.herokuapp.com/api/";
 
-        if (API_SERVICE == null) {
             Retrofit retrofit = new Retrofit.Builder()
                     .baseUrl(baseUrl)
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(httpClient.build()) // <-- usamos el log level
                     .build();
-            API_SERVICE = retrofit.create(ApiService.class);
-        }
+            return  retrofit;
+    }
+    public  static  ApiService getUserService(){
+        ApiService userService = getRetrofit().create(ApiService.class);
 
-        return API_SERVICE;
+        return  userService;
     }
 }

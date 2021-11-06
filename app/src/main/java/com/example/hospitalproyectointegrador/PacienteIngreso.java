@@ -4,15 +4,28 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class PacienteIngreso extends AppCompatActivity {
+    TextView txtNombre,txtDni;
     Button btnPerfilPaciente,btnCrearCitaPaciente,btnHistorialCitasxFechaPaciente,btnCerrarSesionPaciente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.paciente_ingreso);
+        txtNombre = (TextView)  findViewById(R.id.txtNombreDoc);
+        txtDni = (TextView) findViewById(R.id.txtCargoDoc);
+
+        Intent intent = getIntent();
+
+        if(intent.getExtras() !=null){
+            String passedName = intent.getStringExtra("nombre");
+            String passedDni = intent.getStringExtra("dni");
+            txtNombre.setText("NOMBRE: " + passedName);
+            txtDni.setText("DNI:" + passedDni);
+        }
 
         btnPerfilPaciente= findViewById(R.id.btnPerfilPaciente);
         btnPerfilPaciente.setOnClickListener(new View.OnClickListener() {
